@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.links {
+    margin-top: 2em;
+    float: right;
+}
+
+.unorder > li {
+    padding-right: 3em;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.title {
+    justify-content: center;
+    line-height: 5.5em;
+    font-size: 1.2em;
+    clear: both;
+}
+
+.navbar {
+    justify-content: space-around;
+    border: 1px solid red;
+}
+
+.navbar > ul {
+    margin: 2em;
+    justify-content: center;
+}
+
+.about, .world, .travel {
+    border: 1px solid red;
+    margin-top: 5em;
+    justify-content: center;
+    height: 20em;
+    width: 100%;
+    padding: 4em;
+    text-align: center;
+    line-height: 2em;
+    overflow: hidden;
+}
+
+.about {
+    border: 2px solid red
+}
+
+.travel {
+    background: url('./img/aircraft.svg') no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+.world {
+    background: url('./img/world.svg') no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+}
+
+header {
+    border: 1px solid yellowgreen;
+    overflow: auto;
+}
+
+section {
+    height: 100vh;
+}
