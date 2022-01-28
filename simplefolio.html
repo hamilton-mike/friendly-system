@@ -10,43 +10,77 @@
 <body>
     <main>
         <header>
-            <div class="links">
-                <ul class="flex unorder">
-                    <li><a href="">GitHub</a></li>
-                    <li><a href="">LinkedIn</a></li>
-                </ul>
-            </div>
-
-            <div class="title flex">
-                <img src="./img/banner.svg" alt="website">
-            </div>
-            <hr>
-
-            <nav class="navbar">
-                <ul class="flex unorder">
+            <nav class="flex navbar">
+                <ul class="flex unordered">
                     <li>Flair</li>
                     <li>Present</li>
                     <li>Services</li>
                 </ul>
-            </nav>
 
-            <div class="flex">
-                <div class="travel"></div>
-
-                <div class="about">
-                    <p>I'm a <span>dev</span> willing to relocate, but most importantly, <br />I'm a Full Stack Developer.</p>
-                    <p>I've built front & back-end applications. Now, I look forward to bringing value to you.</p>
-                    <p>You can find more information about me and what I do here.</p>
-                    <button>Resume</button>
-                    <button>CV</button>
+                <div class="flex logo dos">
+                    <img src="./img/male.svg" alt="avatar">
+                    <p>My Portfolio</p>
                 </div>
 
-                <div class="world"></div>
+                <ul class="flex unordered">
+                    <li><a href="">GitHub</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+                <!-- <div class="links">
+                    <ul class="flex unorder">
+                        <li><a href="">GitHub</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                    </ul>
+                </div> -->
+            </nav>
+
+            <hr>
+
+            <div class="banner flex">
+                <img src="./img/banner.svg" alt="website">
             </div>
 
-            <section></section>
         </header>
 
+        <main>
+            <section id="about-section">
+                <div class="flex">
+                    <div class="travel"></div>
+
+                    <div class="content">
+                        <h3>I'm a <span>dev</span> willing to relocate, but most importantly, <br />I'm a Full Stack Developer.</h3>
+                        <h3>I've built front & back-end applications. Now, I look forward to bringing value to you.</h3>
+                        <h3>You can find more information about me and what I do here.</h3>
+                        <button>Resume</button>
+                        <button>CV</button>
+                    </div>
+
+                    <div class="world"></div>
+                </div>
+            </section>
+
+            <section id="skills-section">
+                <div class="flex double">
+                    <div id="html"></div>
+                    <div>
+                        <p>My skills consists of</p>
+                        <p>HTML CSS JAVASCRIPT REACT</p>
+                    </div>
+                </div>
+                <div class="flex double">
+                    <div>Collaboration & teamwork</div>
+                    <div id="front"></div>
+                </div>
+                <div class="flex double">
+                    <div id="back"></div>
+                    <div>NODE EXPRESS MONGODB</div>
+                </div>
+            </section>
+
+            <section></section>
+        </main>
+
+        <footer></footer>
     </main>
 </body>
 </html>
