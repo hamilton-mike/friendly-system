@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Italiana', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -30,6 +33,7 @@ li:hover {
 
 .banner {
     justify-content: center;
+    padding-top: 5em;
     line-height: 5.5em;
     font-size: 1.2em;
     width: 100%;
@@ -44,6 +48,7 @@ li:hover {
     background-color: darkgoldenrod;
     position: fixed;
     width: 100%;
+    padding: 1em;
     margin: 0 auto;
 }
 
@@ -70,13 +75,17 @@ section {
     background: darkolivegreen;
 }
 
+.about-border {
+    border: 4px solid black;
+}
+
 .content, .world, .travel {
     justify-content: center;
     text-align: center;
     width: 100%;
     height: 20em;
-    padding-top: 3em;
-    margin: 1em;
+    padding-top: 1em;
+    margin: 0 1em;
     line-height: 2em;
 }
 
@@ -94,14 +103,30 @@ section {
 
 #skills-section {
     height: 100vh;
+    pointer-events: none;
 }
+
 #skills-section div {
+    text-align: center;
     border: 2px solid black;
     height: 33.3333vh;
 }
 
-.double > div{
+.double div {
     width: 100%;
+}
+
+.skills-content {
+    padding-top: 4em;
+}
+
+.skills-content ul {
+    padding-top: 1em;
+    list-style-type: none;
+}
+
+.content-li {
+    justify-content: space-evenly;
 }
 
 #html {
@@ -125,6 +150,51 @@ section {
 @media only screen and (max-width:1280px){
     #about-section > div {
         flex-direction: column;
+    }
+    .content {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .content-li {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .unordered {
+        display: none;
+    }
+}
+
+@media only screen and (max-height:800px){
+    .skills-content {
+       overflow: hidden;
+       padding-top: 3em;
+    }
+
+    .skills-content p, .skills-content ul > li {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-height:600px){
+    .skills-content {
+       overflow: hidden;
+       padding: 2em 0;
+    }
+}
+
+@media only screen and (max-height:400px){
+    .skills-content {
+       overflow: hidden;
+       padding: 1em 0;
+
+    }
+
+    .skills-content p, .skills-content ul > li {
+        font-size: 8px;
     }
 }
 

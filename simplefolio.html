@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mikes Portfolio</title>
 </head>
@@ -26,26 +29,21 @@
                     <li><a href="">GitHub</a></li>
                     <li><a href="">LinkedIn</a></li>
                 </ul>
-                <!-- <div class="links">
-                    <ul class="flex unorder">
-                        <li><a href="">GitHub</a></li>
-                        <li><a href="">LinkedIn</a></li>
-                    </ul>
-                </div> -->
-            </nav>
 
-            <hr>
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
 
             <div class="banner flex">
                 <img src="./img/banner.svg" alt="website">
             </div>
-
         </header>
 
         <main>
             <section id="about-section">
-                <div class="flex">
-                    <div class="travel"></div>
+                <div class="flex about-border">
+                    <div class="world"></div>
 
                     <div class="content">
                         <h3>I'm a <span>dev</span> willing to relocate, but most importantly, <br />I'm a Full Stack Developer.</h3>
@@ -55,25 +53,42 @@
                         <button>CV</button>
                     </div>
 
-                    <div class="world"></div>
+                    <div class="travel"></div>
                 </div>
             </section>
 
             <section id="skills-section">
                 <div class="flex double">
                     <div id="html"></div>
-                    <div>
-                        <p>My skills consists of</p>
-                        <p>HTML CSS JAVASCRIPT REACT</p>
+                    <div class="skills-content">
+                        <p>Front-End Skills</p>
+                        <ul class="flex content-li">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>REACT</li>
+                        </ul>
                     </div>
                 </div>
+
                 <div class="flex double">
-                    <div>Collaboration & teamwork</div>
+                    <div class="skills-content">
+                        <p>Pair Programming</p>
+                        <p>Collaboration & teamwork</p>
+                    </div>
                     <div id="front"></div>
                 </div>
+
                 <div class="flex double">
                     <div id="back"></div>
-                    <div>NODE EXPRESS MONGODB</div>
+                    <div class="skills-content">
+                        <p>Back-End Skills</p>
+                        <ul class="flex content-li">
+                            <li>NODE</li>
+                            <li>EXPRESS</li>
+                            <li>MONGODB</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
