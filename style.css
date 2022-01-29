@@ -11,17 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-}
-
-li:hover {
-    background-color: #E4DCCF;
+nav {
+    animation: loading 500ms ease-in;
 }
 
 main {
@@ -39,6 +30,19 @@ footer {
     background: black;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+li:hover {
+    background-color: #E4DCCF;
+}
+
 iframe {
     pointer-events: none;
     width: 200px;
@@ -48,6 +52,9 @@ iframe {
 
 #about, #skills, #project {
     height: 10vh;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2em;
 }
 
 #project-section, #about-section {
@@ -60,7 +67,7 @@ iframe {
 
 .unordered > li {
     padding: 0.5em;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 .unordered > li {
@@ -131,7 +138,7 @@ iframe {
     pointer-events: none;
 }
 
-#skills-section div {
+.container div {
     text-align: center;
     border: 2px solid rgb(91, 82, 222);
     height: 33.3333vh;
@@ -181,16 +188,16 @@ iframe {
     align-items: center;
 }
 
-.card {
+.project {
     padding-top: 1em;
 }
 
-.card h3 {
+.project h3 {
     text-align: center;
     padding: 1em 0;
 }
 
-.card:hover > .overlay {
+.project:hover > .overlay {
     background-color: #000;
     opacity: 0.3;
     transition: all 1s;
@@ -245,5 +252,15 @@ iframe {
 
     .skills-content p, .skills-content ul > li {
         font-size: 8px;
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
     }
 }
