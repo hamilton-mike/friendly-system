@@ -7,6 +7,10 @@
     font-size: 22px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -17,11 +21,46 @@ img {
 }
 
 li:hover {
-    text-decoration: underline;
+    background-color: #E4DCCF;
+}
+
+main {
+    background: rgb(50, 48, 68);
+}
+
+section {
+    margin: 1.5em 3em;
+    background: #E0B4A4;
+    box-shadow: 24px 24px 25px 6px rgba(0,0,0,0.7);
+}
+
+footer {
+    height: 80px;
+    background: black;
+}
+
+iframe {
+    pointer-events: none;
+    width: 200px;
+    border-radius: 50%;
+    background: black;
+}
+
+#about, #skills, #project {
+    height: 10vh;
+}
+
+#project-section, #about-section {
+    border: 4px solid rgb(91, 82, 222);
 }
 
 .flex {
     display: flex;
+}
+
+.unordered > li {
+    padding: 0.5em;
+    border:2px solid black;
 }
 
 .unordered > li {
@@ -39,44 +78,30 @@ li:hover {
     width: 100%;
 }
 
-.navbar, .dos {
+.navbar, .logo {
     justify-content: space-evenly;
     align-items: center;
 }
 
 .navbar {
-    background-color: darkgoldenrod;
+    background-color: #E0B4A4;
     position: fixed;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     margin: 0 auto;
-}
-
-.dos {
-    border: 2px solid palegreen;
+    border-bottom: 4px solid rgb(91, 82, 222);
 }
 
 .logo {
     margin: auto 2em;
+    border: 2px solid palegreen;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 .logo img {
     height: 45px;
     padding: 0 1em;
-}
-
-main {
-    background: deeppink;
-}
-
-section {
-    margin: 1.5em 3em;
-    background: darkolivegreen;
-}
-
-.about-border {
-    border: 4px solid black;
 }
 
 .content, .world, .travel {
@@ -108,7 +133,7 @@ section {
 
 #skills-section div {
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgb(91, 82, 222);
     height: 33.3333vh;
 }
 
@@ -145,6 +170,31 @@ section {
     background: url('./img/server.svg') no-repeat;
     background-size: contain;
     background-size: 100% 100%;
+}
+
+#project-section {
+    height: 30vh;
+}
+
+.projects {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    padding-top: 1em;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.card:hover > .overlay {
+    background-color: #000;
+    opacity: 0.3;
+    transition: all 1s;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width:1280px){
@@ -196,9 +246,4 @@ section {
     .skills-content p, .skills-content ul > li {
         font-size: 8px;
     }
-}
-
-footer {
-    height: 80px;
-    background: black;
 }

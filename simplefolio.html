@@ -15,12 +15,12 @@
         <header>
             <nav class="flex navbar">
                 <ul class="flex unordered">
-                    <li>Flair</li>
-                    <li>Present</li>
-                    <li>Services</li>
+                    <li><a href="#about">Flair</a></li>
+                    <li><a href="#skills">Services</a></li>
+                    <li><a href="#project">Present</a></li>
                 </ul>
 
-                <div class="flex logo dos">
+                <div class="flex logo">
                     <img src="./img/male.svg" alt="avatar">
                     <p>My Portfolio</p>
                 </div>
@@ -29,10 +29,6 @@
                     <li><a href="">GitHub</a></li>
                     <li><a href="">LinkedIn</a></li>
                 </ul>
-
-                <div class="bars">
-                    <i class="fas fa-bars"></i>
-                </div>
             </nav>
 
             <div class="banner flex">
@@ -41,6 +37,8 @@
         </header>
 
         <main>
+            <div id="about"></div>
+
             <section id="about-section">
                 <div class="flex about-border">
                     <div class="world"></div>
@@ -50,12 +48,14 @@
                         <h3>I've built front & back-end applications. Now, I look forward to bringing value to you.</h3>
                         <h3>You can find more information about me and what I do here.</h3>
                         <button>Resume</button>
-                        <button>CV</button>
+                        <button>Cover</button>
                     </div>
 
                     <div class="travel"></div>
                 </div>
             </section>
+
+            <div id="skills"></div>
 
             <section id="skills-section">
                 <div class="flex double">
@@ -92,7 +92,36 @@
                 </div>
             </section>
 
-            <section></section>
+            <div id="project"></div>
+
+            <section id="project-section">
+                <div class="flex projects">
+
+                    <div class="card">
+                        <h3>S.H.I.E.L.D.</h3>
+                        <div class="overlay">
+                            <iframe src="https://giphy.com/embed/Js7KV7VrQDYJagYooE"></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h3>Tamagotchi</h3>
+                        <div class="overlay tamagotchi">
+                            <iframe src="https://giphy.com/embed/8ekqrxRgmW5na"></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h3>Galaxy Blog</h3>
+                        <div class="overlay galaxy">
+                            <iframe src="https://giphy.com/embed/gY9EjI2aR1yWff2X7X"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
 
         <footer></footer>
