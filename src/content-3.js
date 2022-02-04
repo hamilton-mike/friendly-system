@@ -31,3 +31,6 @@ oneDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {
     e.preventDefault()
     location.href = 'project-info.html';
 });
+
+const twoDiv = document.querySelector('.two');
+twoDiv.querySelector('p').textContent = 'Coming Soon!';

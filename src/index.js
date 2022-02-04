@@ -1,4 +1,5 @@
 const projects = document.querySelectorAll('.project');
+const form = document.querySelector('form');
 
 const projectArray = [
     {
@@ -27,14 +28,25 @@ const projectArray = [
     }
 ];
 
-for (let i = 0; i < projects.length; i++) {
-    let project = projects[i];
+const setProjects = () => {
+    for (let i = 0; i < projects.length; i++) {
+        let project = projects[i];
 
-    project.childNodes[3].addEventListener('click', () => {
-        localStorage.setItem("project", JSON.stringify(projectArray[i]));
-        const others = projectArray.filter(obj => obj !== projectArray[i]);
-        localStorage.setItem("zero", JSON.stringify(others[0]));
-        localStorage.setItem("one", JSON.stringify(others[1]));
-        location.href = 'project-info.html';
-    });
+        project.childNodes[3].addEventListener('click', () => {
+            localStorage.setItem("project", JSON.stringify(projectArray[i]));
+
+            const others = projectArray.filter(obj => obj !== projectArray[i]);
+            localStorage.setItem("zero", JSON.stringify(others[0]));
+            localStorage.setItem("one", JSON.stringify(others[1]));
+
+            location.href = 'project-info.html';
+        });
+    }
 }
+
+const clear = () => {
+    window.onbeforeunload = () => form.reset();
+}
+
+setProjects()
+clear()
