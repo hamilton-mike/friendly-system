@@ -75,8 +75,11 @@ img {
 }
 
 article iframe {
-    pointer-events: none;
     height: 100%;
+}
+
+iframe {
+    pointer-events: none;
 }
 
 article h3 {
@@ -106,7 +109,7 @@ small, p {
     text-align: center;
     font-size: 2em;
     padding: 2em 0;
-    color: #FDB137;
+    color: white;
 }
 
 #project-section, #about-section, #contact-section {
@@ -114,7 +117,6 @@ small, p {
 }
 
 .project iframe {
-    pointer-events: none;
     width: 200px;
     border-radius: 50%;
     background: black;
@@ -145,11 +147,12 @@ small, p {
 }
 
 .navbar {
-    background-color: #E0B4A4;
+    background: rgb(96, 94, 94);
     position: fixed;
     width: 100%;
     height: 3em;
     border-bottom: 4px solid rgb(91, 82, 222);
+    color: white;
 }
 
 .logo {
@@ -244,7 +247,6 @@ small, p {
 .project h3 {
     text-align: center;
     padding: 1em 0;
-    pointer-events: none;
 }
 
 .project:hover > .overlay {

@@ -1,9 +1,9 @@
 const projects = document.querySelectorAll('.project');
 const form = document.querySelector('form');
 const anchors = document.querySelectorAll('.content button a');
+const arr = Array.from(anchors)
 
 const setPaths = () => {
-    const arr = Array.from(anchors)
     arr[0].href = 'https://drive.google.com/file/d/1TrF5BpSsoW_ROxTGFFsCqatABKSjxmdu/view?usp=sharing';
     arr[1].href = 'https://drive.google.com/file/d/1a0Ya-TvQj3C3OEdyKNMskMP4ShEuK6rP/view?usp=sharing';
 }
