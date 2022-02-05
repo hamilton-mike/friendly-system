@@ -14,8 +14,19 @@ html {
 body {
     background: rgb(50, 48, 68);
 }
+
 nav {
     animation: loading 500ms ease-in;
+}
+
+button {
+    box-shadow: 4px 5px 0 0 rgb(50, 48, 68);
+    padding: 0.1em;
+}
+
+button:active, input[type='submit']:active {
+    position: relative;
+    top: 5px;
 }
 
 section {
@@ -41,6 +52,7 @@ input[type='submit'] {
     border: none;
     outline: none;
     margin-bottom: 0.5em;
+    box-shadow: 4px 5px 0 0 rgb(50, 48, 68);
 }
 
 input[type='submit']:hover {
@@ -250,6 +262,7 @@ article > div {
     justify-content: center;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .form-box {
@@ -296,9 +309,22 @@ article > div {
     place-items: center;
 }
 
+#tech {
+    display: flex;
+    margin: 1em auto;
+    list-style: none;
+}
+
+#tech li {
+    pointer-events: none;
+    padding: 0 0.2em;
+}
+
 .project-dets {
     display: grid;
     place-items: center;
+    overflow: hidden;
+    text-align: center;
 }
 
 .project-dets p {
@@ -344,11 +370,19 @@ article > div {
     #project-stat {
         width: 100%;
     }
+
+    .content button {
+        margin-top: 2em;
+    }
 }
 
 @media only screen and (max-width:800px){
     .contact {
         display: none;
+    }
+
+    .flex-container {
+        margin: 0;
     }
 
     #contact-section {
@@ -379,14 +413,9 @@ article > div {
 }
 
 @media only screen and (max-height:800px){
-    .skills-content, .form-container {
+    .skills-content {
        overflow: hidden;
        padding-top: 3em;
-    }
-
-    .project-dets {
-        overflow: hidden;
-        margin: 0;
     }
 
     .skills-content p, .skills-content ul > li {
@@ -394,20 +423,25 @@ article > div {
     }
 }
 
-@media only screen and (max-height:500px) {
-    .project-dets {
-       display: none;
+@media only screen and (max-height:600px){
+    .skills-content {
+        overflow: hidden;
+        padding: 2em 0;
     }
 }
 
 @media only screen and (max-height:600px){
-    .skills-content {
-       overflow: hidden;
-       padding: 2em 0;
+    #project-stat article iframe {
+        display: none;
     }
 }
 
 @media only screen and (max-height:400px){
+
+    footer {
+        margin-top: 3em;
+    }
+
     .skills-content {
        overflow: hidden;
        padding: 1em 0;

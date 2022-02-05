@@ -12,15 +12,15 @@ const projectArray = [
     {
         title: 'S.H.I.E.L.D.',
         description: 'Commander there was an idea to bring together a group of remarkable people',
-        stack: 'MongoDB | Express.js | Node.js | React.js',
+        stack: ['MongoDB', 'Express.js', 'Node.js', 'React.js'],
         github: 'https://github.com/hamilton-mike/Marvel-Backend',
         site: 'https://shield-commander.netlify.app/',
-        gif: 'https://giphy.com/embed/k44WnHDdvfClW'
+        gif: 'https://giphy.com/embed/k44WnHDdvfClW',
     },
     {
         title: 'Tamagotchi',
         description: 'Vegeta fighting enemies, play as a virtual pet. Keep the Saiyan pride alive!',
-        stack: 'HTML | CSS | Javascript',
+        stack: ['HTML', 'CSS', 'Javascript'],
         github: 'https://github.com/hamilton-mike/vegetaTamagotchi',
         site: 'https://vegetatamagotchi.netlify.app/',
         gif: 'https://giphy.com/embed/XAr3mee7JuXYc'
@@ -28,10 +28,10 @@ const projectArray = [
     {
         title: 'Galaxy Blog',
         description: 'Post quotes from your favorite Jedi or Sith Lord in a Galaxy Blog far far away...',
-        stack: 'HTML | CSS | EJS | MongoDB',
+        stack: ['HTML', 'CSS', 'EJS', 'MongoDB'],
         github: 'https://github.com/hamilton-mike/project_One/tree/mike1',
         site: 'https://ga-one-project.herokuapp.com/registration',
-        gif: 'https://giphy.com/embed/9E7kUhnT9eDok'
+        gif: 'https://giphy.com/embed/QtjNbzT6Zi5Cm2oyV2'
     }
 ];
 

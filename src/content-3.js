@@ -8,13 +8,20 @@ var one = localStorage.getItem("one");
 one = JSON.parse(one);
 
 const { title, description, stack, github, site, gif } = one;
+console.log();
 
 document.querySelector('#project').textContent = title;
 document.querySelector('iframe').src = gif;
-document.querySelector('#tech').textContent = stack;
 document.querySelector('#desc').textContent = description;
 document.querySelector('#git').href = github;
 document.querySelector('#site').href = site;
+
+const ul = document.querySelector('#tech');
+for (let i = 0; i < stack.length; i++) {
+    const list = document.createElement('li');
+    list.innerHTML = stack[i];
+    ul.append(list)
+}
 
 const zeroDiv = document.querySelector('.zero');
 zeroDiv.querySelector('p').textContent = zero.title;
