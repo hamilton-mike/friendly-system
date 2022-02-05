@@ -22,7 +22,9 @@ for (let i = 0; i < stack.length; i++) {
     ul.append(list)
 }
 
+
 const zeroDiv = document.querySelector('.zero');
+document.querySelector('.img-zero img').src = obj.svg;
 zeroDiv.querySelector('p').textContent = obj.title;
 zeroDiv.querySelectorAll('button a')[1].href = obj.site;
 zeroDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {
@@ -31,6 +33,7 @@ zeroDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {
 });
 
 const oneDiv = document.querySelector('.one');
+document.querySelector('.img-one img').src = one.svg;
 oneDiv.querySelector('p').textContent = one.title;
 oneDiv.querySelectorAll('button a')[1].href = one.site;
 oneDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {

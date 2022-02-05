@@ -15,7 +15,8 @@ const projectArray = [
         stack: ['MongoDB', 'Express.js', 'Node.js', 'React.js'],
         github: 'https://github.com/hamilton-mike/Marvel-Backend',
         site: 'https://shield-commander.netlify.app/',
-        gif: 'https://giphy.com/embed/k44WnHDdvfClW',
+        gif: 'https://giphy.com/embed/3GnKKEw2v7bXi',
+        svg: './img/marvel.svg'
     },
     {
         title: 'Tamagotchi',
@@ -23,7 +24,8 @@ const projectArray = [
         stack: ['HTML', 'CSS', 'Javascript'],
         github: 'https://github.com/hamilton-mike/vegetaTamagotchi',
         site: 'https://vegetatamagotchi.netlify.app/',
-        gif: 'https://giphy.com/embed/XAr3mee7JuXYc'
+        gif: 'https://giphy.com/embed/bUVSTqteX1eIbhhZOO',
+        svg: './img/team-four-star.svg'
     },
     {
         title: 'Galaxy Blog',
@@ -31,7 +33,8 @@ const projectArray = [
         stack: ['HTML', 'CSS', 'EJS', 'MongoDB'],
         github: 'https://github.com/hamilton-mike/project_One/tree/mike1',
         site: 'https://ga-one-project.herokuapp.com/registration',
-        gif: 'https://giphy.com/embed/QtjNbzT6Zi5Cm2oyV2'
+        gif: 'https://giphy.com/embed/QtjNbzT6Zi5Cm2oyV2',
+        svg: './img/star-war.svg'
     }
 ];
 

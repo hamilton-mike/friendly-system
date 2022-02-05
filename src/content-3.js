@@ -24,6 +24,7 @@ for (let i = 0; i < stack.length; i++) {
 }
 
 const zeroDiv = document.querySelector('.zero');
+document.querySelector('.img-zero img').src = zero.svg;
 zeroDiv.querySelector('p').textContent = zero.title;
 zeroDiv.querySelectorAll('button a')[1].href = zero.site;
 zeroDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {
@@ -32,6 +33,7 @@ zeroDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {
 });
 
 const oneDiv = document.querySelector('.one');
+document.querySelector('.img-one img').src = obj.svg;
 oneDiv.querySelector('p').textContent = obj.title;
 oneDiv.querySelectorAll('button a')[1].href = obj.site;
 oneDiv.querySelectorAll('button a')[0].addEventListener('click', (e) => {

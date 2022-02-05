@@ -38,6 +38,7 @@ section {
 footer {
     height: 80px;
     clear: right;
+    color: #FDB137;
 }
 
 textarea {
@@ -70,18 +71,13 @@ img {
     padding: 2em;
 }
 
-li:hover {
+.unordered > li:hover {
     background-color: #E4DCCF;
-    color: rgb(248, 0, 77);
-}
-
-iframe {
-    pointer-events: none;
 }
 
 article iframe {
+    pointer-events: none;
     height: 100%;
-    padding-top: 5em;
 }
 
 article h3 {
@@ -98,6 +94,10 @@ article > div {
     margin: 2em;
 }
 
+small, p {
+    pointer-events: none;
+}
+
 .flex {
     display: flex;
 }
@@ -106,8 +106,8 @@ article > div {
     height: 10vh;
     text-align: center;
     font-size: 2em;
-    color: #E4DCCF;
     padding: 2em 0;
+    color: #FDB137;
 }
 
 #project-section, #about-section, #contact-section {
@@ -154,10 +154,9 @@ article > div {
 }
 
 .logo {
-    border: 2px solid rgb(248, 0, 77);
+    border: 2px solid rgb(91, 82, 222);
     border-radius: 50%;
-    pointer-events: none;
-    margin-right: 2em;
+    margin-left: 2em;
     padding-right: 1em;
 }
 
@@ -286,7 +285,6 @@ article > div {
     justify-content: space-evenly;
     border: 4px solid rgb(91, 82, 222);
     height: 100%;
-    color: #E4DCCF;
     padding: 1em;
 }
 
@@ -341,9 +339,8 @@ article > div {
 }
 
 .other-project img {
-    width: 200px;
-    max-height: auto;
-    max-width: 100%;
+    width: 20em;
+    height: 10em;
 }
 
 .live {
@@ -421,18 +418,13 @@ article > div {
     .skills-content p, .skills-content ul > li {
         font-size: 20px;
     }
+
 }
 
 @media only screen and (max-height:600px){
     .skills-content {
         overflow: hidden;
         padding: 2em 0;
-    }
-}
-
-@media only screen and (max-height:600px){
-    #project-stat article iframe {
-        display: none;
     }
 }
 
@@ -450,6 +442,11 @@ article > div {
 
     .skills-content p, .skills-content ul > li {
         font-size: 8px;
+    }
+}
+@media only screen and (max-height:350px){
+    #project-stat article iframe {
+        display: none;
     }
 }
 
