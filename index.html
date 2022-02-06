@@ -130,27 +130,28 @@
                     </div>
 
                     <div class="form-box flex">
-                        <form name="contact" data-netlify="true" method="POST">
-                                <div class="form">
-                                    <label for="fname">First:</label>
-                                    <input type="text" placeholder='First Name' required name="fname">
-                                </div>
+                        <form name="contact" data-netlify-honeypot="honey" data-netlify="true" method="POST">
+                            <input class="hidden"cname="honey">
+                            <div class="form">
+                                <label for="fname">First:</label>
+                                <input type="text" placeholder='First Name' required name="fname">
+                            </div>
 
-                                <div class="form">
-                                    <label for="lname">Last:</label>
-                                    <input type="text" placeholder='Last Name' required name="lname">
-                                </div>
+                            <div class="form">
+                                <label for="lname">Last:</label>
+                                <input type="text" placeholder='Last Name' required name="lname">
+                            </div>
 
-                                <div class="form">
-                                    <label for="email">Email:</label>
-                                    <input placeholder='Email' type="email" required name="email">
-                                </div>
+                            <div class="form">
+                                <label for="email">Email:</label>
+                                <input placeholder='Email' type="email" required name="email">
+                            </div>
 
-                                <div class="form">
-                                    <label for="text">Message:</label>
-                                    <textarea id="text" cols="30" rows="10" required spellcheck name="text"></textarea>
-                                    <input type="submit" value="Send!">
-                                </div>
+                            <div class="form">
+                                <label for="text">Message:</label>
+                                <textarea id="text" cols="30" rows="10" required spellcheck name="text"></textarea>
+                                <input type="submit" value="Send!">
+                            </div>
                         </form>
                     </div>
                 </div>

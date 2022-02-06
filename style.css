@@ -273,6 +273,10 @@ small, p {
     background: #E4DCCF;
 }
 
+.hidden {
+    display: none;
+}
+
 .form {
     margin-bottom: 1.5em;
 }
