@@ -13,7 +13,7 @@ const projectArray = [
         title: 'S.H.I.E.L.D.',
         description: 'Commander there was an idea to bring together a group of remarkable people. This app helps users create and customized teams',
         stack: ['MongoDB', 'Express.js', 'Node.js', 'React.js'],
-        github: 'https://github.com/hamilton-mike/Marvel-Backend',
+        github: 'https://github.com/hamilton-mike/Marvel-Frontend',
         site: 'https://shield-commander.netlify.app/',
         gif: 'https://giphy.com/embed/3GnKKEw2v7bXi',
         svg: './img/marvel.svg'
