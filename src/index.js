@@ -4,8 +4,8 @@ const anchors = document.querySelectorAll('.content button a');
 const arr = Array.from(anchors)
 
 const setPaths = () => {
-    arr[0].href = 'https://drive.google.com/file/d/1R8Dzaz5Yr1VYrVdh9-6oBMy0d9Fvy6xg/view?usp=sharing';
-    arr[1].href = 'https://docs.google.com/document/d/1lwd1ve7CzKFg9q0v1H7BNIFEDTgxHym6MgnLvpcMIlM/edit?usp=sharing';
+    arr[0].href = 'https://docs.google.com/document/d/1Vek7-Jfw3LOX5mctWldpSWMIBnrMWHKa/edit?usp=sharing&ouid=106465160499350880403&rtpof=true&sd=true';
+    arr[1].href = 'https://drive.google.com/file/d/1KKJVZhDfguCxmNXpflbL-YaVvDbmnpck/view?usp=sharing';
 }
 
 const projectArray = [
