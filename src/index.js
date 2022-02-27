@@ -5,7 +5,7 @@ const arr = Array.from(anchors)
 
 const setPaths = () => {
     arr[0].href = 'https://docs.google.com/document/d/1Vek7-Jfw3LOX5mctWldpSWMIBnrMWHKa/edit?usp=sharing&ouid=106465160499350880403&rtpof=true&sd=true';
-    arr[1].href = 'https://drive.google.com/file/d/1KKJVZhDfguCxmNXpflbL-YaVvDbmnpck/view?usp=sharing';
+    arr[1].href = 'https://drive.google.com/file/d/1nk-vesuAEqaa2tR7Kj3nGTRG6zREbyjY/view?usp=sharing';
 }
 
 const projectArray = [
