@@ -60,4 +60,4 @@ for (let i = 0; i < stack.length; i++) {
 ![Project Detail](img/project-details.png)
 
 ### Site Map
-* [Home](https://shield-commander.netlify.app)
+* [Home](https://michaelhamilton.netlify.app)
