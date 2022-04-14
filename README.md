@@ -3,7 +3,7 @@
 ### Description
 
 Thank you for visiting my portfolio. My name is Michael and I'm a Full Stack Developer.
-Here you view my most recent projects, resume, and cover letter. If you have any questions please fill out the form to contact me. Enjoy viewing my website.
+Here you can view my most recent projects, resume, and cover letter. If you have any questions please fill out the form to contact me. Enjoy viewing my website.
 
 ### Stack
 
