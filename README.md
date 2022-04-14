@@ -3,7 +3,7 @@
 ### Description
 
 Thank you for visiting my portfolio. My name is Michael and I'm a Full Stack Developer.
-Here you view my most recent projects, resume, and cover letter. If you have any questions please fill out the form to contact me. Enjoy viewing my website https://shield-commander.netlify.app
+Here you view my most recent projects, resume, and cover letter. If you have any questions please fill out the form to contact me. Enjoy viewing my website.
 
 ### Stack
 
@@ -55,3 +55,9 @@ for (let i = 0; i < stack.length; i++) {
 }
 ```
 ## Live Photos
+![About Me](img/about-me.png)
+![Projects](img/projects.png)
+![Project Detail](img/project-details.png)
+
+### Site Map
+* [Home](https://shield-commander.netlify.app)
